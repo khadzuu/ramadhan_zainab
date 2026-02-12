@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ramadhan Mubarak</title>
+
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1a0026, #3b0a45, #5e1b5e);
+    color: #f8e9d2;
+    overflow-x: hidden;
+}
+
+/* Lanterns */
+.lantern {
+    position: absolute;
+    top: 0px;
+    font-size: 70px; /* bigger */
+    animation: swing 4s ease-in-out infinite alternate;
+}
+
+.lantern.left {
+    left: 80px;
+}
+
+.lantern.right {
+    right: 80px;
+}
+
+@keyframes swing {
+    from { transform: rotate(-20deg); }
+    to { transform: rotate(20deg); }
+}
+
+/* Main Layout */
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+/* Image Section */
+.left-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.left-section img {
+    width: 350px;
+}
+
+/* Text Section */
+.right-section {
+    width: 50%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.sub {
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.from {
+    margin-top: 20px;
+    opacity: 0.85;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #3b0a45, #5e1b5e);
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Lanterns -->
+<div class="lantern left">🏮</div>
+<div class="lantern right">🏮</div>
+
+<div class="main">
+
+    <div class="left-section">
+        <img src="moon.png" alt="Ramadhan Image">
+    </div>
+
+    <div class="right-section">
+        <h1>RAMADHAN</h1>
+        <h1>MUBARAK</h1>
+        <div class="from">From Zainab Timber 🤍</div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Copywriter made by Khadija Timber 💜
+</footer>
+
+</body>
+</html>
