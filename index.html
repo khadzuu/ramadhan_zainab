@@ -2,116 +2,91 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ramadhan Mubarak</title>
 
 <style>
 body {
     margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #1a0026, #3b0a45, #5e1b5e);
-    color: #f8e9d2;
-    overflow-x: hidden;
-}
-
-/* Lanterns */
-.lantern {
-    position: absolute;
-    top: 0px;
-    font-size: 70px; /* bigger */
-    animation: swing 4s ease-in-out infinite alternate;
-}
-
-.lantern.left {
-    left: 80px;
-}
-
-.lantern.right {
-    right: 80px;
-}
-
-@keyframes swing {
-    from { transform: rotate(-20deg); }
-    to { transform: rotate(20deg); }
-}
-
-/* Main Layout */
-.main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px;
-}
-
-/* Image Section */
-.left-section {
-    width: 50%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2a0035, #4a0c5c, #6a1b75);
+    font-family: 'Georgia', serif;
+    color: #f5d78e;
 }
 
-.left-section img {
-    width: 350px;
-}
-
-/* Text Section */
-.right-section {
-    width: 50%;
+/* Container */
+.container {
     text-align: center;
+    max-width: 500px;
 }
 
-h1 {
-    font-size: 3rem;
-    margin: 0;
-    letter-spacing: 3px;
+/* Image */
+.container img {
+    width: 220px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 20px rgba(255,215,120,0.4));
 }
 
+/* Title */
+.title {
+    font-size: 42px;
+    letter-spacing: 6px;
+    color: #f5d78e;
+    text-shadow:
+        0 0 10px rgba(255,215,120,0.6),
+        0 0 20px rgba(255,215,120,0.4);
+}
+
+/* Divider */
+.divider {
+    width: 80px;
+    height: 2px;
+    background: #f5d78e;
+    margin: 20px auto;
+}
+
+/* Subtitle */
 .sub {
-    margin-top: 15px;
-    letter-spacing: 2px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #fff;
+    opacity: 0.85;
 }
 
+/* From */
 .from {
-    margin-top: 20px;
-    opacity: 0.85;
-    font-size: 1rem;
+    margin-top: 25px;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.8;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 15px;
-    background: linear-gradient(135deg, #3b0a45, #5e1b5e);
-    font-size: 0.9rem;
+    position: absolute;
+    bottom: 15px;
+    font-size: 12px;
+    opacity: 0.5;
+    color: #e0d8d8f6;
 }
 </style>
 </head>
 
 <body>
 
-<!-- Lanterns -->
-<div class="lantern left">🏮</div>
-<div class="lantern right">🏮</div>
-
-<div class="main">
-
-    <div class="left-section">
-        <img src="moon.png" alt="Ramadhan Image">
-    </div>
-
-    <div class="right-section">
-        <h1>RAMADHAN</h1>
-        <h1>MUBARAK</h1>
-        <div class="from">From Zainab Timber 🤍</div>
-    </div>
-
+<div class="container">
+    <img src="moon.png" alt="Ramadhan Design">
+    <div class="title">RAMADHAN MUBARAK</div>
+    <div class="divider"></div>
+    <div class="sub">Pehli Raat Mubarak</div>
+    <div class="from">From Zainab Timber</div>
 </div>
 
 <footer>
-    © 2026 Copywriter made by Khadija Timber 💜
+    © 2026 Made By Khadija Timber
 </footer>
 
 </body>
